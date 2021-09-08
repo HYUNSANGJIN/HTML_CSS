@@ -1,0 +1,16 @@
+.red {
+  width: 100px;
+  height: 100px;
+  /* padding : 컨텐츠 안에 들어가는 스페이싱
+     margin : 컨텐츠 밖에 들어가는 스페이싱
+
+     padding
+     시계방향으로 위에서부터 top->right->bottm->left
+     패딩을 따로 줄 수 있음
+     padiing : 20px 20px 20px 20px;
+  */
+  padding: 20px;
+  margin: 20px;
+  border: 2px dashed red;
+  background: yellow;
+}
