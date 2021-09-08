@@ -1,0 +1,27 @@
+div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: red;
+}
+/* 
+  position은 기본값으로 static을 가지고 있음
+  static : html정의된 순서대로  브라우저상에 자연스럽게 보여지는 것
+  relative : 원래 있어야 하는 자리에서 지정된 px 만큼 움직임
+  absolute : 아이템이 담겨있는 상자 안에서 옮겨감(제일 위에있는 상자가 conatiner니까 여기서 20px씩 옮겨감)
+  fixed : 상자 안에서 완전히 벗어나서 윈도우 안에서 움직여 가는것 
+  sticky : 원래 있던 자리에 있으면서 스크롤링을 해도 없어지지 않고 그자리에 그대로 있다.
+  */
+.container {
+  background: yellow;
+  left: 20px;
+  top: 20px;
+  position: relative;
+}
+
+.box {
+  background: blue;
+  left: 20px;
+  top: 20px;
+  position: sticky;
+}

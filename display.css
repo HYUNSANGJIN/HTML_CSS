@@ -1,0 +1,28 @@
+div,
+span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
+div {
+  background: red;
+  /* 
+    div는 block-level이라 한줄에 하나씩 나오지만
+    display를 써서 inline-block을 해주면 한줄에 여러개씩 inline형식처럼 나옴
+    그냥 inline을 써줄 경우 div태그안에 내용을 입력하면 내용들이 한줄에 여러개씩 나옴
+
+    inline : 컨텐츠 자체만을 꾸며주는것, 지정해준 widht나 height는 무시하고 안에 들어있는는 콘텐츠 크기에 맞춰 변경된다
+    inline-block : 상자로 변환되어서 안에 콘텐츠 사이즈에 상관없이 지정한 width나 height에 맞춰서 나옴
+  */
+  display: inline-block;
+}
+
+span {
+  /* 
+        span은 inline-level이라 한줄에 여러개씩 나오지만
+        display를 써서 block을 해주면 한줄에 한개씩 나온다.
+    */
+  background: blue;
+  display: block;
+}
