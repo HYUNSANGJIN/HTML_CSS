@@ -1,0 +1,106 @@
+/* 
+    flexbox
+    1. 컨테이너(박스)에 적용되는 속성값들이 존재한다.
+    2. 각각의 item들에 적용할수 있는 속성값들이 존재한다.
+    3. 중심축과 반대축이 있다.
+
+
+    컨테이너(박스)에 꾸며줄수 있는 flexbox 속성값들
+    display
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content
+
+
+    item에 지정되는 속성값들
+    order
+    flex-grow
+    flex-shrink
+    flex
+    align-self
+*/
+
+.container {
+  background: beige;
+  height: 100vh;
+  /* display : flex -> flexbox로 만들고 싶다면.. */
+  display: flex;
+  /* 
+    flex-direction: 
+    row : 기본값(왼쪽에서 오른쪽으로 가는 방향)
+    row-reverse : 오른쪽에서 왼쪽으로 옮겨감
+    column : 위에서 아래로 
+    column-reverse : 아래에서 위로
+
+     flex-wrap: 
+      nowrap : 기본값(한줄에 계속 붙어있다)
+      wrap : 한줄에 꽉차게 되면 자동적으로 다음라인으로 넘어감
+      wrap-reverse : 위에서부터 반대로 래핑됨
+
+      flex-flow : 
+      위 두가지를 합친것
+      flex-flow : column nowrap;
+  */
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  /* 
+    justify-content:  중심축에서 아이템들을 어떻게 배치할건지 결정하는 것
+    기본값은 flex-start(처음부터 왼쪽에서 오른쪽으로)
+    만약, 수직축이 중심축이라면 위에서 아래로 나옴
+
+    flex-end : 오른쪽축으로 아이템 배치
+    center : 중앙 정렬
+    space-around : 박스를 둘러싸게 스페이싱을 넣어주는것
+    space-evenly : 똑같은 간격을 넣어주는것
+    space-between : 왼쪽과 오른쪽을 딱 맞게 배치하고, 중간에만 아이템을 넣어줌
+  */
+  justify-content: flex-start;
+
+  /*
+   align-items:  반대축에서 아이템들을 배치하는 속성 
+  */
+
+  align-items: center;
+  align-content: space-between;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.item1 {
+  background: #f48fb1;
+}
+
+.item2 {
+  background: #ce93d8;
+}
+.item3 {
+  background: #b39ddb;
+}
+.item4 {
+  background: #90caf9;
+}
+.item5 {
+  background: #a5d6a7;
+}
+.item6 {
+  background: #e6ee9c;
+}
+.item7 {
+  background: #e6ee9c;
+}
+.item8 {
+  background: #fff59d;
+}
+.item9 {
+  background: #ffcc80;
+}
+.item10 {
+  background: #ffab91;
+}

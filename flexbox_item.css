@@ -1,0 +1,39 @@
+.container {
+  padding-top: 100px;
+  background: beige;
+  height: 100vh;
+  display: flex;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+/* 
+    flex-grow
+    컨테이너를 꽉채우려고 아이템들이 늘어남
+    기본값 0
+
+    flex-shrink
+    컨테이너가 점점 작아졌을때 어떻게 행동하느냐 지정하는것
+
+    flex-basis
+    아이템들이 공간을 얼마나 차지하고 있는지 조금더 세부적으로 명시할 수 있게 도와줌
+    기본값 auto
+
+    align-self
+    아이템별로 아이템들을 정렬할 수 있음
+*/
+.item1 {
+  background: red;
+}
+
+.item2 {
+  background: orange;
+}
+
+.item3 {
+  background: yellow;
+}
